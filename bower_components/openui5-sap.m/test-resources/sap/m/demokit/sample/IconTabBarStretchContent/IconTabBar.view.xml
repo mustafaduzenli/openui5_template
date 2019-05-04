@@ -1,0 +1,40 @@
+<mvc:View
+	controllerName="sap.m.sample.IconTabBarStretchContent.IconTabBar"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
+	xmlns="sap.m">
+	<IconTabBar
+		id="idIconTabBarStretchContent"
+		stretchContentHeight="true"
+		backgroundDesign="Transparent"
+		applyContentPadding="false"
+		expanded="{device>/isNoPhone}"
+		class="sapUiResponsiveContentPadding">
+		<items>
+			<IconTabFilter
+				text="Info">
+				<Carousel>
+					<pages>
+						<l:VerticalLayout>
+							<Image src="{img>/products/pic1}" densityAware="false" />
+						</l:VerticalLayout>
+						<Image src="{img>/products/pic2}" densityAware="false" />
+						<Image src="{img>/products/pic3}" densityAware="false" />
+					</pages>
+				</Carousel>
+			</IconTabFilter>
+			<IconTabFilter
+				text="Attachments">
+				<Text text="Attachments go here ..." />
+			</IconTabFilter>
+			<IconTabFilter
+				text="Notes">
+				<Text text="Notes go here ..." />
+			</IconTabFilter>
+			<IconTabFilter
+				text="People">
+				<Text text="People content goes here ..." />
+			</IconTabFilter>
+		</items>
+	</IconTabBar>
+</mvc:View>

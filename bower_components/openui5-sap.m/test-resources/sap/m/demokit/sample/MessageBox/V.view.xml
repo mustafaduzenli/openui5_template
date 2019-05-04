@@ -1,0 +1,46 @@
+<mvc:View
+	controllerName="sap.m.sample.MessageBox.C"
+	xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+	<l:VerticalLayout
+		class="sapUiContentPadding"
+		width="100%">
+		<l:content>
+			<Button
+				text="Confirm"
+				class="sapUiSmallMarginBottom"
+				press="handleConfirmationMessageBoxPress"
+				width="250px"/>
+			<Button
+				text="Alert"
+				class="sapUiSmallMarginBottom"
+				press="handleAlertMessageBoxPress"
+				width="250px"/>
+			<Text
+					text="Set initial button focus by:"/>
+			<Button
+					text="Action"
+					class="sapUiSmallMarginBottom"
+					press="handleConfirmMessageBoxPress_InitialFocus"
+					width="250px"/>
+			<Button
+					text="Custom button text"
+					class="sapUiSmallMarginBottom"
+					press="handleShowMessageBoxPress_InitialFocus"
+					width="250px"/>
+			<Button
+					text="Control"
+					class="sapUiSmallMarginBottom"
+					press="handleShowMessageBoxPress_InitialFocus_Control"
+					width="250px"/>
+			<Text
+					text="Disabled horizontal and vertical scrolling"/>
+			<Button
+					text="Show big content"
+					class="sapUiSmallMarginBottom"
+					press="handleShowMessageBoxPress_Scrolling"
+					width="250px"/>
+		</l:content>
+	</l:VerticalLayout>
+</mvc:View>
